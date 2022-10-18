@@ -41,6 +41,7 @@ void getinput(float &f1, float &f2) {
   cin >> f2;
 }
 
+//setting up swaptwovalues function
 void swapTwoValues(int &n1, int &n2) {
   int temp = 0;
   temp = n1;
