@@ -2,14 +2,16 @@
 #include <iostream>
 using namespace std;
 
-// Declare Function Prototypes
+//initialize all non-main functions in main file
 void getinput(int &n1, int &n2);
 void getinput(float &f1, float &f2);
 void swapTwoValues(int &n1, int &n2);
 void swapTwoValues(float &f1, float &f2);
 int main() {
+
+//defining variables
   int num1, num2;
-  float fnum1, fnum2
+  float fnum1, fnum2;
   getinput(num1, num2);
   cout << " Before Swap" << setw(5) << num1 << setw(5) << num2 << setw(5)
        << endl;
@@ -17,11 +19,14 @@ int main() {
   cout << " After Swap" << setw(5) << num1 << setw(5) << num2 << setw(5)
        << endl;
 
-  // set up overloaded function with float parameters
+//setting up inputs
   getinput(fnum1, fnum2);
-  
+  cout << setw(5) << fnum1 << setw(5) << fnum2 << setw(5) << endl;
+  swapTwoValues(fnum1, fnum2);
+  cout << setw(5) << fnum1 << setw(5) << fnum2 << setw(5) << endl;
 }
 
+//asking user for input and receiving 
 void getinput(int &n1, int &n2) {
   cout << "enter first var:" << endl;
   cin >> n1;
